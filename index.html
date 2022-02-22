@@ -10,11 +10,13 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Postcards Through Hell</title>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <!-- NAV ELEMENTS START -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">Postcards Through Hell</a>
           <button
@@ -28,7 +30,10 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/">
@@ -70,8 +75,48 @@
           </div>
         </div>
       </nav>
+      <!-- END OF NAV ELEMENTS -->
+
+      <!-- HERO START -->
+      <div class="overlay"></div>
+      <!-- Hero Video -->
+      <video
+        playsinline="playsinline"
+        autoplay="autoplay"
+        muted="muted"
+        loop="loop"
+      >
+        <source src="./assets/media/bad-company.mp4" type="video/mp4" />
+      </video>
+
+      <!-- Hero Content -->
+      <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-white">
+            <h1 class="display-3">Postcards Through Hell</h1>
+            <p class="lead mb-0">
+              Tales of the blood-soaked messengers delivering U.S. mail in Afghanistan</p>
+          </div>
+        </div>
+      </div>
+      <!-- END OF HERO -->
     </header>
-    <main></main>
+    <main>
+      <section class="py-5 bg-black text-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 mx-auto">
+              <p>The HTML5 video element uses an mp4 video as a source. Change the source video to add in your own background! The header text is vertically centered using flex utilities that are built into Bootstrap.</p>
+              <p>The overlay color and opacity can be changed by modifying the <code>background-color</code> and <code>opacity</code> properties of the <code>.overlay</code> class in the CSS.</p>
+              <p>Set the mobile fallback image in the CSS by changing the background image of the header element within the media query at the bottom of the CSS snippet.</p>
+              <p class="mb-0">
+                Created by <a href="https://startbootstrap.com">Start Bootstrap</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
 
     <script
