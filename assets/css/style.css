@@ -1,14 +1,19 @@
 @font-face {
-    font-family: 'zilap_combatgrunge';
-    src: url('../fonts/zilapcombatgrunge-61zy-webfont.woff2') format('woff2'),
-         url('../fonts/zilapcombatgrunge-61zy-webfont.woff') format('woff');
+    font-family: 'armalite';
+    src: url('../fonts/armalite.ttf');
     font-weight: normal;
     font-style: normal;
-
+}
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../fonts/BebasNeue-Regular.woff') format('woff'),
+          url('../fonts/BebasNeue-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
-    font-family: 'zilap_combatgrunge', serif;
+    font-family: 'armalite', serif;
 }
 
 header {
@@ -46,8 +51,25 @@ header .overlay {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(167, 0, 0, 0.5);
+  background-color: rgb(0, 0, 0);
+  opacity: 0.75;
   z-index: 1;
+}
+
+.navbar-brand {
+  white-space: normal;
+}
+
+.lead {
+  font-family: 'BebasNeue', sans-serif;
+}
+
+main p {
+  font-family: 'BebasNeue', sans-serif;
+}
+
+.display-6 {
+  line-height: 1.5em;
 }
 
 /* Media Query for devices withi coarse pointers and no hover functionality */
@@ -61,6 +83,10 @@ header .overlay {
   }
 
   header video {
+    display: none;
+  }
+
+  .navbar-brand {
     display: none;
   }
 }
