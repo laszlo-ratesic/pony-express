@@ -1,19 +1,24 @@
 @font-face {
-    font-family: 'armalite';
-    src: url('../fonts/armalite.ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "armalite";
+  src: url("../fonts/armalite.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'BebasNeue';
-    src: url('../fonts/BebasNeue-Regular.woff') format('woff'),
-          url('../fonts/BebasNeue-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "BebasNeue";
+  src: url("../fonts/BebasNeue-Regular.woff") format("woff"),
+    url("../fonts/BebasNeue-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-    font-family: 'armalite', serif;
+  font-family: "armalite", serif;
+}
+
+li {
+  font-family: "BebasNeue", sans-serif;
+  letter-spacing: 0.1rem;
 }
 
 header {
@@ -61,15 +66,22 @@ header .overlay {
 }
 
 .lead {
-  font-family: 'BebasNeue', sans-serif;
+  font-family: "BebasNeue", sans-serif;
+  letter-spacing: 0.1rem;
 }
 
 main p {
-  font-family: 'BebasNeue', sans-serif;
+  font-family: "BebasNeue", sans-serif;
+  letter-spacing: 0.05rem;
 }
 
 .display-6 {
   line-height: 1.5em;
+}
+
+#authors-section h3 {
+  font-family: 'BebasNeue', sans-serif;
+  font-style: italic;
 }
 
 /* Media Query for devices withi coarse pointers and no hover functionality */
@@ -78,8 +90,8 @@ main p {
 
 @media (pointer: coarse) and (hover: none) {
   header {
-    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black
-      no-repeat center center scroll;
+    background: url("https://images.pexels.com/photos/1199967/pexels-photo-1199967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+      black no-repeat center center scroll;
   }
 
   header video {

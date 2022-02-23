@@ -10,6 +10,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./assets/css/cards.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Postcards Through Hell</title>
   </head>
@@ -45,7 +46,7 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  href="#"
+                  href="#authors-section"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -55,8 +56,16 @@
                   AUTHORS
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Alan Chiasson</a></li>
-                  <li><a class="dropdown-item" href="#">Edward Ford</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#authors-section">
+                      Alan Chiasson
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#authors-section">
+                      Edward Ford
+                    </a>
+                  </li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -107,12 +116,13 @@
       <!-- END OF HERO -->
     </header>
     <main class="bg-black">
+      <!-- About the Book Section -->
       <section class="py-5 bg-black text-light mb-1" id="book-section">
         <div class="container-fluid w-75">
           <div class="row">
-            <div class="col-lg-12 col-xl-6">
-              <h2 class="display-2">About the Book</h2>
-              <p class="display-6">
+            <div class="col-lg-12 col-xl-6 mb-3">
+              <h2 class="display-2 text-warning">About the Book</h2>
+              <p class="display-6 my-6">
                 A team of private security contractors is recruited to
                 Afghanistan, working high-risk contracts for SOC (Special
                 Operations Consulting). As SOC expands their operations into the
@@ -122,62 +132,71 @@
               </p>
             </div>
             <!-- Placeholder image -->
-            <div class="col-lg-8 offset-lg-2 col-xl-5 offset-xl-1 mb-3">
-              <img src="https://picsum.photos/500" alt="">
+            <div class="image col-lg-8 offset-lg-2 col-xl-5 offset-xl-1 my-3">
+              <img src="https://picsum.photos/500" alt="" />
             </div>
             <!-- End of placeholder -->
-            <hr>
+
             <!-- Placeholder image -->
-            <div class="col-lg-8 offset-lg-2 col-xl-5 offset-xl-0 mb-3">
-              <img src="https://picsum.photos/500" alt="">
+            <div class="image col-lg-8 offset-lg-2 col-xl-5 offset-xl-0 my-3">
+              <img src="https://picsum.photos/500" alt="" />
             </div>
             <!-- End of placeholder -->
-            <div class="col-lg-12 col-xl-6 offset-xl-1">
+            <div class="col-lg-12 col-xl-6 offset-xl-1 my-3">
               <p class="display-6">
                 Battling Taliban Militia, local drug warlords, and their own
-                personal demons, accrued from years as soldiers and soldiers-for-hire.
-                These men called The Pony Express, will tell all. The book depicts the
-                rarely seen side of the war effort in the Middle East, exploring why
-                these operations are often hidden from the public and examining the
-                psychological impact on these security contractors who risk their lives
-                to deliver the mail.
+                personal demons, accrued from years as soldiers and
+                soldiers-for-hire. These men called The Pony Express, will tell
+                all. The book depicts the rarely seen side of the war effort in
+                the Middle East, exploring why these operations are often hidden
+                from the public and examining the psychological impact on these
+                security contractors who risk their lives to deliver the mail.
               </p>
             </div>
           </div>
         </div>
+        <hr class="w-75 mx-auto" />
       </section>
-      <section class="py-5 bg-black text-light mb-1">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 mx-auto">
-              <p>
-                The HTML5 video element uses an mp4 video as a source. Change
-                the source video to add in your own background! The header text
-                is vertically centered using flex utilities that are built into
-                Bootstrap.
-              </p>
-              <p>
-                The overlay color and opacity can be changed by modifying the
-                <code>background-color</code>
-                and
-                <code>opacity</code>
-                properties of the
-                <code>.overlay</code>
-                class in the CSS.
-              </p>
-              <p>
-                Set the mobile fallback image in the CSS by changing the
-                background image of the header element within the media query at
-                the bottom of the CSS snippet.
-              </p>
-              <p class="mb-0">
-                Created by
-                <a href="https://startbootstrap.com">Start Bootstrap</a>
-              </p>
+      <!-- End of About the Book section -->
+      <!-- About the Authors Section -->
+      <section class="py-5 bg-black text-light mb-1" id="authors-section">
+        <div class="container-fluid w-75">
+          <h2 class="display-2 text-warning text-center">The Authors</h2>
+
+          <div class="page-content">
+            <!-- Author card -->
+            <div class="card" style="width: 36rem;">
+              <div class="content">
+                <h2 class="title">Edward Ford</h2>
+                <p class="copy">
+                  Edward Ford retired from the United States Marine Corps as an
+                  infantry and Force Reconnaissance Marine in 2004. He served in
+                  many countries around the world as both a Marine and a Tier 1
+                  Security Contractor, including combat service during the First
+                  Gulf War, Somalia, Iraq, and Afghanistan.
+                </p>
+                <button class="btn">Contact</button>
+              </div>
+            </div>
+
+            <!-- Author card -->
+            <div class="card" style="width: 36rem;">
+              <div class="content">
+                <h2 class="title">Alan Chiasson</h2>
+                <p class="copy">
+                  Alan Chiasson served in the United States Navy as a Hospital
+                  Corpsman. He is currently certified as a Paramedic in the
+                  state of Texas and has several deployments overseas, in both
+                  Iraq and Afghanistan providing high-risk medical support for
+                  PSD, convoy, and force protection operations.
+                </p>
+                <button class="btn">Contact</button>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- End of About the Authors section -->
     </main>
     <footer></footer>
 
