@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap");
+
+.carousel {
+  padding: 0 70px;
+
+  .carousel-item {
+    font-size: 2rem;
+    text-align: center;
+    overflow: hidden;
+    min-height: 290px;
+
+    .img-box {
+      width: 135px;
+      height: 135px;
+      margin: 0 auto;
+      padding: 5px;
+      border: 1px solid #ddd;
+      border-radius: 50%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .testimonial {
+    padding: 30px 0 10px;
+  }
+
+  .overview {
+    font-style: italic;
+
+    b {
+      color: #7aa641;
+    }
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  top: 50%;
+  background: none;
+
+  i {
+    font-size: 68px;
+    line-height: 42px;
+    position: absolute;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #fff;
+  }
+}
+
+.carousel-indicators {
+  bottom: -40px;
+
+  [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    margin: 1px 3px;
+    border-radius: 50%;
+    border: none;
+  }
+
+  li,
+  li.active {
+    width: 12px;
+    height: 12px;
+    margin: 1px 3px;
+    border-radius: 50%;
+    border: none;
+  }
+
+  li {
+    background: #999;
+    border-color: transparent;
+    box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  li.active {
+    background: #555;
+    box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.testimonial, .show, .btn, .collapsing {
+  font-size: 1.3rem;
+  font-family: "Roboto Serif", sans-serif;
+}
+
+a.btn.collapsed:before {
+    content: 'See More \00BB';
+    display: block;
+}
+
+a.btn:before {
+    content: 'See Less \00AB';
+    display: block;
+}
+
+
+// @media screen and (max-width: 575px) {
+//     .carousel-control-next,
+//     .carousel-control-prev {
+//         display: none;
+//     }
+// }
