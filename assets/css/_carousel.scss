@@ -89,7 +89,25 @@
   }
 }
 
-.testimonial {
+.testimonial, .show, .btn, .collapsing {
   font-size: 1.3rem;
   font-family: "Roboto Serif", sans-serif;
 }
+
+a.btn.collapsed:before {
+    content: 'See More \00BB';
+    display: block;
+}
+
+a.btn:before {
+    content: 'See Less \00AB';
+    display: block;
+}
+
+
+// @media screen and (max-width: 575px) {
+//     .carousel-control-next,
+//     .carousel-control-prev {
+//         display: none;
+//     }
+// }

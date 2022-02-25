@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap");
+
 @font-face {
   font-family: "armalite";
   src: url("../fonts/armalite.ttf");
@@ -19,6 +21,10 @@ body {
 li {
   font-family: "BebasNeue", sans-serif;
   letter-spacing: 0.1rem;
+}
+
+p {
+  font-family: "Roboto Serif", sans-serif;
 }
 
 header {
