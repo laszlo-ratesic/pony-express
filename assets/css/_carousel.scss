@@ -104,10 +104,6 @@ a.btn:before {
     display: block;
 }
 
-
-// @media screen and (max-width: 575px) {
-//     .carousel-control-next,
-//     .carousel-control-prev {
-//         display: none;
-//     }
-// }
+a.contact-btn:before {
+    content: none;
+}
