@@ -43,7 +43,7 @@ body {
   }
 }
 
-.card {
+.author-card {
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -168,7 +168,7 @@ body {
 }
 
 @media (hover: hover) and (min-width: $bp-lg) {
-  .card:after {
+  .author-card:after {
     transform: translateY(0);
   }
 
@@ -182,8 +182,8 @@ body {
     }
   }
 
-  .card:hover,
-  .card:focus-within {
+  .author-card:hover,
+  .author-card:focus-within {
     align-items: center;
 
     &:before {
@@ -204,7 +204,7 @@ body {
     }
   }
 
-  .card:focus-within {
+  .author-card:focus-within {
     &:before,
     &:after,
     .content,
