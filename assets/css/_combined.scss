@@ -1,5 +1,23 @@
+@use "slideshow";
+
 @use "carousel";
 
-@use "cards";
+@use "author-cards";
 
 @use "style";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap");
+
+@font-face {
+  font-family: "armalite";
+  src: url("../fonts/armalite.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../fonts/BebasNeue-Regular.woff") format("woff"),
+    url("../fonts/BebasNeue-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}

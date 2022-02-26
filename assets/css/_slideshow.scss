@@ -1,0 +1,125 @@
+a,
+a:hover,
+a:focus {
+  color: inherit;
+}
+
+#slideshow {
+  margin: 80px auto;
+  position: relative;
+  width: 75%;
+  height: 50rem;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#slideshow > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+
+.profile-card {
+  width: 75%;
+  height: 54rem;
+  background-image: url('../media/placeholder-rip.jpg');
+  background-repeat: no-repeat;
+  background-color: #000;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  margin: 10px auto;
+  cursor: pointer;
+  border-radius: 10px;
+
+  img {
+    transition: all linear 0.25s;
+    width: 100%;
+    height: auto;
+  }
+
+  .profile-name {
+    font-family: "BebasNeue", sans-serif;
+    position: absolute;
+    left: 30px;
+    bottom: 70px;
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    transition: all linear 0.25s;
+  }
+
+  .profile-death-date {
+    font-family: "Roboto Serif", serif;
+    font-weight: bold;
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    color: #FFA900;
+    font-size: 1rem;
+    transition: all linear 0.25s;
+  }
+  .profile-team-role {
+    font-family: "Roboto Serif", serif;
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    color: #fff;
+    font-size: 1rem;
+    transition: all linear 0.25s;
+  }
+
+  &:hover {
+    img {
+      filter: grayscale(100%);
+    }
+    .profile-name {
+      bottom: 80px;
+    }
+
+    .profile-death-date {
+      bottom: 60px;
+    }
+
+    .profile-team-role {
+      bottom: 35px;
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  #slideshow {
+    height: 36rem;
+  }
+
+  .profile-card {
+    height: 36rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #slideshow {
+    height: 18rem;
+  }
+
+  .profile-card {
+    width: 95%;
+    height: 24rem;
+
+    .profile-name {
+      bottom: 7rem;
+    }
+
+    .profile-death-date {
+      bottom: 5rem;
+    }
+
+    .profile-team-role {
+      bottom: 2rem;
+    }
+  }
+}
