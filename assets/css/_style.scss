@@ -51,6 +51,11 @@ header .overlay {
   z-index: 1;
 }
 
+#book-section p {
+  font-family: 'Roboto Serif', serif;
+  font-size: 1.5rem;
+}
+
 main p {
   font-family: "BebasNeue", sans-serif;
   letter-spacing: 0.05rem;
@@ -158,5 +163,8 @@ small {
   }
   .display-6 {
     font-size: 1.3rem;
+  }
+  #book-section p {
+    text-align: center;
   }
 }
