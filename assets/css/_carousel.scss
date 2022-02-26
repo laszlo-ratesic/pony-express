@@ -94,6 +94,11 @@
   font-family: "Roboto Serif", sans-serif;
 }
 
+a.show {
+  font-family: 'BebasNeue', serif;
+  font-size: inherit;
+}
+
 a.btn.collapsed:before {
     content: 'See More \00BB';
     display: block;
