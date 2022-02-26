@@ -51,15 +51,6 @@ header .overlay {
   z-index: 1;
 }
 
-.navbar-brand {
-  white-space: normal;
-}
-
-.lead {
-  font-family: "BebasNeue", sans-serif;
-  letter-spacing: 0.1rem;
-}
-
 main p {
   font-family: "BebasNeue", sans-serif;
   letter-spacing: 0.05rem;
@@ -67,6 +58,24 @@ main p {
 
 section {
   height: 100%;
+}
+
+label {
+  font-family: 'BebasNeue', sans-serif;
+  font-size: 3rem;
+}
+
+input, option, textarea, optgroup, .form-control {
+  font-family: 'Roboto serif', serif;
+}
+
+.navbar-brand {
+  white-space: normal;
+}
+
+.lead {
+  font-family: "BebasNeue", sans-serif;
+  letter-spacing: 0.1rem;
 }
 
 .display-6 {
@@ -77,6 +86,7 @@ section {
   text-align: center;
   position: relative;
   margin: 30px 0 60px;
+  font-size: 4rem;
 
   &:after {
     content: "";
