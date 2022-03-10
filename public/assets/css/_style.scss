@@ -1,0 +1,174 @@
+html {
+  zoom: 75%;
+}
+
+body {
+  font-family: "armalite", serif;
+}
+
+li {
+  font-family: "BebasNeue", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+p {
+  font-family: "Roboto Serif", sans-serif;
+}
+
+header {
+  position: relative;
+  background-color: black;
+  height: 135vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.75;
+  z-index: 1;
+}
+
+#book-section p {
+  font-family: 'Roboto Serif', serif;
+  font-size: 1.5rem;
+}
+
+main p {
+  font-family: "BebasNeue", sans-serif;
+  letter-spacing: 0.05rem;
+}
+
+section {
+  height: 100%;
+}
+
+label {
+  font-family: 'BebasNeue', sans-serif;
+  font-size: 3rem;
+}
+
+input, option, textarea, optgroup, .form-control {
+  font-family: 'Roboto serif', serif;
+}
+
+.navbar-brand {
+  white-space: normal;
+}
+
+.lead {
+  font-family: "BebasNeue", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.display-6 {
+  line-height: 1.5em;
+}
+
+.section-title {
+  text-align: center;
+  position: relative;
+  margin: 30px 0 60px;
+  font-size: 4rem;
+
+  &:after {
+    content: "";
+    width: 100px;
+    position: absolute;
+    margin: 0 auto;
+    height: 3px;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+  }
+
+  h3 {
+    font-family: "BebasNeue", sans-serif;
+    font-style: italic;
+  }
+}
+
+.rights {
+  font-family: "Roboto serif", serif;
+}
+
+h6.bold-text {
+  font-family: 'BebasNeue', sans-serif;
+  font-size: 2rem;
+}
+
+small {
+  font-family: 'Roboto serif', serif;
+}
+
+.list-unstyled li a {
+  font-family: 'Roboto serif', serif;
+  text-decoration: none;
+
+  &:hover {
+    color: #FFA900;
+  }
+}
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url("https://images.pexels.com/photos/1199967/pexels-photo-1199967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+      black no-repeat center center scroll;
+  }
+
+  header video {
+    display: none;
+  }
+
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .author-card {
+    width: 18rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .copy {
+    font-size: 1rem;
+  }
+  .display-6 {
+    font-size: 1.3rem;
+  }
+  #book-section p {
+    text-align: center;
+  }
+}
