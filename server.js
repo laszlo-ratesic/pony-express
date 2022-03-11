@@ -1,5 +1,5 @@
 const express = require("express");
-const htmlRoutes = require('./routes/htmlRoutes');
+const htmlRoutes = require("./routes/htmlRoutes");
 const nodemailer = require("nodemailer");
 const multiparty = require("multiparty");
 const { transformSync } = require("@babel/core");
@@ -14,9 +14,9 @@ const app = express();
 // app.use(cors({ origin: "*" }));
 
 // Serve static files from public
-app.use(express.static('public'))
+app.use(express.static("public"));
 
-app.use('/', htmlRoutes);
+app.use("/", htmlRoutes);
 
 // Create transport object
 const transporter = nodemailer.createTransport({
@@ -48,12 +48,18 @@ app.post("/send", (req, res) => {
       data[property] = fields[property].toString();
     });
 
+    console.log(`<${data.email}>`);
     // Create mail object w/ fields
     const mail = {
-      from: data.name,
-      to: process.env.EMAIL,
-      subject: data.subject,
-      text: `${data.name} <${data.email}> \n${data.message}`,
+      from: `"P.T.H. Website Admin" <${process.env.EMAIL}>`,
+      to: `${process.env.EMAIL}, info@postcardsthroughhell.com`,
+      subject: "[contact-message]: Postcards Through Hell",
+      html: `From: ${data.name} | ${data.company}<br/>
+      Referred by: ${data.referral}<br/>
+      <${data.email}><br/>
+      ${data.message}<br/>
+      <br/>
+      <a href="mailto:${data.email}">Reply to ${data.name}'s email - ${data.email}</a>`,
     };
 
     // Use transporter to send mail
@@ -67,8 +73,6 @@ app.post("/send", (req, res) => {
     });
   });
 });
-
-
 
 // EXPRESS SERVER LISTENING
 app.listen(PORT, () => {
