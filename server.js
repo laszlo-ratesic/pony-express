@@ -20,7 +20,7 @@ app.use('/', htmlRoutes);
 
 // Create transport object
 const transporter = nodemailer.createTransport({
-  host: "smtp.live.com",
+  host: "smtp-mail.outlook.com",
   port: 587,
   auth: {
     user: process.env.EMAIL,
