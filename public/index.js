@@ -16,3 +16,4 @@ const formEvent = form.addEventListener("submit", (event) => {
 
   sendMail(mail);
 });
+
