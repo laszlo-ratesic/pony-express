@@ -1,7 +1,7 @@
 const form = document.getElementById("contact-form");
 
 const sendMail = (mail) => {
-  fetch("/send", {
+  fetch("/api/send", {
     method: "POST",
     body: mail,
   }).then((response) => {
