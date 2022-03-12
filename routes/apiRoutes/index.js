@@ -1,4 +1,4 @@
-const router = require('express').Router();
+const router = require("express").Router();
 const nodemailer = require("nodemailer");
 const multiparty = require("multiparty");
 require("dotenv").config();
@@ -47,7 +47,7 @@ router.post("/send", (req, res) => {
           <a href="mailto:${data.email}">Reply to ${data.name}'s email - ${data.email}</a>`,
     };
 
-    // Use transporter to send mail
+// Use transporter to send mail
     transporter.sendMail(mail, (err, data) => {
       if (err) {
         console.log(err);
