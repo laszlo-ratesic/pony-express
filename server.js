@@ -2,7 +2,6 @@ const express = require("express");
 const htmlRoutes = require("./routes/htmlRoutes");
 const nodemailer = require("nodemailer");
 const multiparty = require("multiparty");
-const { transformSync } = require("@babel/core");
 require("dotenv").config();
 
 // Testing port will be 5000
@@ -14,7 +13,7 @@ const app = express();
 // app.use(cors({ origin: "*" }));
 
 // Serve static files from public
-app.use(express.static("public"));
+// app.use(express.static("public"));
 
 app.use("/", htmlRoutes);
 
