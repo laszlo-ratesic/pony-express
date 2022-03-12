@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 5000;
 // Initialize express server
 const app = express();
 // cors
-app.use(cors({ origin: "*" }));
+// app.use(cors({ origin: "*" }));
 
 // Serve static files from public
 app.use(express.static("public"));
