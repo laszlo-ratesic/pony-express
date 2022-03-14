@@ -141,6 +141,17 @@ small {
   cursor: pointer;
 }
 
+#bn-link:hover {
+  cursor: pointer;
+}
+
+#amzn-link {
+  width: fit-content;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 .clock {
   width: 727px;
 }
@@ -179,6 +190,9 @@ small {
   }
   #about-section p {
     text-align: center;
+  }
+  #amzn-link {
+    display: none;
   }
   .clock {
     display: none;
