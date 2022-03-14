@@ -141,6 +141,10 @@ small {
   cursor: pointer;
 }
 
+.clock {
+  width: 727px;
+}
+
 /* Media Query for devices withi coarse pointers and no hover functionality */
 
 /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
@@ -175,5 +179,8 @@ small {
   }
   #about-section p {
     text-align: center;
+  }
+  .clock {
+    display: none;
   }
 }
