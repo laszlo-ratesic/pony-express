@@ -22,7 +22,7 @@ const formEvent = form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   let mail = new FormData(form);
-  // sendMail(mail);
+  sendMail(mail);
 
   form.reset();
   alertEl.classList.remove("invisible");
