@@ -1,4 +1,6 @@
 const form = document.getElementById("contact-form");
+const alertEl = document.getElementById("alert-el");
+const alertBtn = document.getElementById("alert-btn");
 
 const sendMail = (mail) => {
   fetch("/api/send", {
@@ -9,11 +11,21 @@ const sendMail = (mail) => {
   });
 };
 
+const emailSent = () => {
+  var alert = new bootstrap.Alert(alertEl);
+  alertBtn.addEventListener("click", function() {
+    alert.close();
+  })
+}
+
 const formEvent = form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   let mail = new FormData(form);
+  // sendMail(mail);
 
-  sendMail(mail);
+  form.reset();
+  alertEl.classList.remove("invisible");
+  emailSent();
 });
 

@@ -603,7 +603,7 @@
         <div class="container">
           <h2 class="display-2 text-warning text-center section-title"><span style="color:red;">Contact!</span> <span style="color:white;">Contact!</span> <span style="color:blue;">Contact!</span></h2>
           <div class="container">
-          <div class="row ">
+          <div class="row">
           <form id="contact-form" role="form" method="POST" action="send" enctype="multipart/form-data">
             <div class="controls">
                 <div class="row">
@@ -634,10 +634,14 @@
                     <div class="col-md-12">
                         <div class="form-group"> <label for="form_message">Message *</label> <textarea id="form_message" name="message" class="form-control" placeholder="Write your message here." rows="4" required="required" data-error="Please, leave us a message."></textarea> </div>
                     </div>
-                    <div class="col-md-12"> <input type="submit" class="btn btn-success btn-send pt-2 btn-block " value="Send Message"> </div>
+                    <div class="col-md-12"> <input id="submit-btn" type="submit" class="btn btn-success btn-send pt-2 btn-block " value="Send Message"> </div>
                 </div>
             </div>
         </form>
+          <div id="alert-el" class="invisible alert alert-success alert-dismissable fade show fixed-bottom mx-auto col-10 col-lg-3">
+            Email Sent!
+            <button class="btn-close" id="alert-btn" type="button"></button>
+          </div>
         </div>
       </div>
         </div>
