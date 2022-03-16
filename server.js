@@ -10,7 +10,7 @@ const app = express();
 // app.use(cors({ origin: "*" }));
 
 // Serve static files from public
-// app.use(express.static("public"));
+app.use(express.static("public"));
 
 app.use("/", htmlRoutes);
 // app.use('/api', apiRoutes);
