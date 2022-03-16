@@ -7,7 +7,7 @@ const sendMail = (mail) => {
     method: "POST",
     body: mail,
     headers: {
-      'Content-Type': 'text/plain',
+      'Content-Type': 'application/json',
       'Cache-Control': 's-max-age=1, stale-while-revalidate'
     }
   }).then((response) => {

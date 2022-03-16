@@ -28,8 +28,8 @@ transporter.verify(function (error, success) {
 });
 
 // POST route
-app.post("/api/send", (req, res) => {
-  res.setHeader('Content-Type', 'text/plain')
+app.get("/api/send", (req, res) => {
+  res.setHeader('Content-Type', 'application/json')
   res.setHeader('Cache-Control', 's-max-age=1, stale-while-revalidate');
   // accept formdata and parse w/ multiparty
   let form = new multiparty.Form();
