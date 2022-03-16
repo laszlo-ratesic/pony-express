@@ -11,6 +11,8 @@ const app = express();
 
 // Serve static files from public
 // app.use(express.static("public"));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.use("/", htmlRoutes);
 // app.use('/api', apiRoutes);
