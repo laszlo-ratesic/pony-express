@@ -13,7 +13,7 @@ const app = express();
 app.use(express.static("public"));
 
 app.use("/", htmlRoutes);
-// app.use('/api', apiRoutes);
+app.use('/api', apiRoutes);
 
 // EXPRESS SERVER LISTENING
 app.listen(PORT, () => {
