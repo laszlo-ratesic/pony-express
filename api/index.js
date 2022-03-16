@@ -3,6 +3,11 @@ const nodemailer = require("nodemailer");
 const multiparty = require("multiparty");
 require("dotenv").config();
 
+const PORT = process.env.PORT || 5000;
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 // Create transport object
 const transporter = nodemailer.createTransport({
   host: "smtp-mail.outlook.com",
@@ -60,5 +65,9 @@ app.post("/api/send", (req, res) => {
     });
   });
 });
+
+app.listen(PORT, () => {
+  console.log(`Listening on port ${PORT}...`);
+})
 
 module.exports = app;
