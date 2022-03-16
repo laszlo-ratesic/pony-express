@@ -10,10 +10,10 @@ const app = express();
 // app.use(cors({ origin: "*" }));
 
 // Serve static files from public
-app.use(express.static("public"));
+// app.use(express.static("public"));
 
 app.use("/", htmlRoutes);
-app.use('/api', apiRoutes);
+// app.use('/api', apiRoutes);
 
 // EXPRESS SERVER LISTENING
 app.listen(PORT, () => {

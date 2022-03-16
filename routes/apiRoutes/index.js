@@ -24,6 +24,8 @@ transporter.verify(function (error, success) {
 
 // POST route
 router.post("/send", (req, res) => {
+  res.setHeader('Content-Type', 'application/json')
+  res.setHeader('Cache-Control', 's-max-age=1, stale-while-revalidate');
   // accept formdata and parse w/ multiparty
   let form = new multiparty.Form();
   let data = {};
