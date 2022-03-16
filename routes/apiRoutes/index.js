@@ -23,7 +23,7 @@ transporter.verify(function (error, success) {
 });
 
 // POST route
-router.post("/send", (req, res) => {
+router.get("/send", (req, res) => {
   res.setHeader('Content-Type', 'application/json')
   res.setHeader('Cache-Control', 's-max-age=1, stale-while-revalidate');
   // accept formdata and parse w/ multiparty
