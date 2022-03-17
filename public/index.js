@@ -6,10 +6,6 @@ const sendMail = (mail) => {
   fetch("/api/send", {
     method: "POST",
     body: mail,
-    headers: {
-      'Content-Type': 'application/json',
-      'Cache-Control': 's-max-age=1, stale-while-revalidate'
-    }
   }).then((response) => {
     return response.json;
   });
