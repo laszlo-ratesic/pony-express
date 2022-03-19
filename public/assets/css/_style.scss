@@ -164,11 +164,11 @@ small {
   header {
     background: url("https://images.pexels.com/photos/1199967/pexels-photo-1199967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
       black no-repeat center center scroll;
+    height: 100vh;
   }
 
   header video {
     display: none;
-    top: 0%;
   }
 
   .navbar-brand {
