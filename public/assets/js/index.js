@@ -1,3 +1,16 @@
+// *********************NAVBAR***************************
+$(document).ready(function () {
+  $(document).click(function () {
+     // if($(".navbar-collapse").hasClass("in")){
+       $('.navbar-collapse').collapse('hide');
+     // }
+  });
+});
+
+
+// *********************END OF NAVBAR***************************
+
+
 // *********************MEMORIAM SLIDESHOW***************************
 let holder = document.querySelectorAll('.card-container')[0],
 cards = document.querySelectorAll('.mem-card');
