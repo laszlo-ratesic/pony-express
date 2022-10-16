@@ -9,8 +9,8 @@ const apiRoutes = require('./routes/apiRoutes');
 const PORT = process.env.PORT || 5000;
 const HOST = process.env.HOST;
 
-const TEST_PRICE = "price_1LtZepI1cZyhQVfh5u8fotxD";
-const LIVE_PRICE = "price_1LtaQhI1cZyhQVfhe7KmL9Fi";
+//const TEST_PRICE = "price_1LtZepI1cZyhQVfh5u8fotxD";
+//const LIVE_PRICE = "price_1LtaQhI1cZyhQVfhe7KmL9Fi";
 
 // Initialize express server
 const app = express();
@@ -28,7 +28,7 @@ app.post('/create-checkout-session', async (req, res) => {
     const session = await stripe.checkout.sessions.create({
         line_items: [
             {
-                price: LIVE_PRICE,
+                price: "price_1LtaQhI1cZyhQVfhe7KmL9Fi",
                 //price: TEST_PRICE,
                 quantity: 1,
             },
