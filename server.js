@@ -35,16 +35,11 @@ app.post('/create-checkout-session', async (req, res) => {
         //success_url: `http://localhost:5000/success.html`,
         //cancel_url: `http://localhost:5000/index.html`,
         automatic_tax: { enabled: true },
-    }).then((result) => {
-        if (result) {
-            res.redirect(303, session.url);
-        }
-    }).catch((err) => {
-        console.log(err);
-        res.status(502).json(err);
-    })
+    });
 
-})
+    res.redirect(303, session.url);
+
+});
 
 // EXPRESS SERVER LISTENING
 app.listen(PORT, () => {
