@@ -34,7 +34,7 @@ app.post('/create-checkout-session', async (req, res) => {
             },
         ],
         mode: 'payment',
-        success_url: `https://postcardstrhoughhell.com/success.html`,
+        success_url: `https://postcardsthroughhell.com/success.html`,
         cancel_url: `https://postcardsthroughhell.com/index.html`,
         //success_url: `http://localhost:5000/success.html`,
         //cancel_url: `http://localhost:5000/index.html`,
