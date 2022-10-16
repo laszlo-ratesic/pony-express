@@ -39,7 +39,7 @@ router.post("/send", (req, res) => {
     // Create mail object w/ fields
     const mail = {
       from: `"P.T.H. Website Admin" <${process.env.EMAIL}>`,
-      to: `${process.env.EMAIL}, info@postcardsthroughhell.com`,
+      to: `${process.env.EMAIL}, achiasson72@hotmail.com`,
       subject: "[contact-message]: Postcards Through Hell",
       html: `From: ${data.name} | ${data.company}<br/>
           Referred by: ${data.referral}<br/>
