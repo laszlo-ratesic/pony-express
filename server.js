@@ -7,6 +7,7 @@ const htmlRoutes = require("./routes/htmlRoutes");
 const apiRoutes = require('./routes/apiRoutes');
 // Testing port will be 5000
 const PORT = process.env.PORT || 5000;
+const HOST = process.env.HOST;
 
 // Initialize express server
 const app = express();
@@ -29,8 +30,8 @@ app.post('/create-checkout-session', async (req, res) => {
             },
         ],
         mode: 'payment',
-        success_url: `${PORT}/success.html`,
-        cancel_url: `${PORT}/index.html`,
+        success_url: `https://${HOST}/success.html`,
+        cancel_url: `https://${HOST}/index.html`,
         //success_url: `http://localhost:5000/success.html`,
         //cancel_url: `http://localhost:5000/index.html`,
         automatic_tax: { enabled: true },
