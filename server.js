@@ -33,6 +33,32 @@ app.post('/create-checkout-session', async (req, res) => {
                 quantity: 1,
             },
         ],
+        shipping_address_collection: {
+            allowed_countries: ['US', 'CA'],
+        },
+        shipping_options: [
+            {
+                shipping_rate_data: {
+                    type: 'fixed_amount',
+                    fixed_amount: {
+                        amount: 4.99,
+                        currency: 'usd',
+                    },
+                    display_name: 'Standard shipping rate',
+                    // Delivers between 10-14 business days
+                    delivery_estimate: {
+                        minimum: {
+                            unit: 'business_day',
+                            value: 10,
+                        },
+                        maximum: {
+                            unit: 'business_day',
+                            value: 14,
+                        },
+                    }
+                }
+            },
+        ],
         mode: 'payment',
         success_url: `https://postcardsthroughhell.com/success.html`,
         cancel_url: `https://postcardsthroughhell.com/index.html`,
