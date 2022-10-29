@@ -38,25 +38,7 @@ app.post('/create-checkout-session', async (req, res) => {
         },
         shipping_options: [
             {
-                shipping_rate_data: {
-                    type: 'fixed_amount',
-                    fixed_amount: {
-                        amount: 4.99,
-                        currency: 'usd',
-                    },
-                    display_name: 'Standard shipping rate',
-                    // Delivers between 10-14 business days
-                    delivery_estimate: {
-                        minimum: {
-                            unit: 'business_day',
-                            value: 10,
-                        },
-                        maximum: {
-                            unit: 'business_day',
-                            value: 14,
-                        },
-                    }
-                }
+                shipping_rate: "shr_1LyNzmI1cZyhQVfhZYeNI8Qx",
             },
         ],
         mode: 'payment',
