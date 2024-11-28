@@ -55,5 +55,5 @@ app.post('/create-checkout-session', async (req, res) => {
 
 // EXPRESS SERVER LISTENING
 app.listen(PORT, () => {
-  console.log(`Listening on port https://localhost:${PORT}...`);
+  console.log(`Listening on port http://localhost:${PORT}...`);
 });
